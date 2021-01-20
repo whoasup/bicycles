@@ -1,0 +1,91 @@
+// form
+
+.form {
+  @media #{$tablet} {
+    padding: 70px 223px;
+
+    color: var(--basic-black);
+
+    background-color: var(--basic-white);
+  }
+
+  @media #{$mobile} {
+    padding: 70px 16px;
+  }
+}
+
+.form__fieldset {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+
+  border: none;
+
+  @media #{$tablet} {
+    margin-top: 0;
+  }
+}
+
+.form__legend {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  @media #{$tablet} {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 20px;
+  }
+}
+
+.form__field {
+  margin-bottom: 20px;
+
+  @media #{$tablet} {
+    margin-bottom: 22px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 21px;
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding: 11px 20px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--basic-black);
+
+  background-color: var(--basic-green);
+  border: 3px solid var(--basic-green);
+  border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--basic-white);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media #{$tablet} {
+    &:hover,
+    &:focus {
+      border-color: var(--basic-black);
+    }
+  }
+}

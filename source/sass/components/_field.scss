@@ -1,0 +1,42 @@
+// field
+
+.field {
+  display: block;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--special-black);
+}
+
+.field__input {
+  width: 100%;
+  padding: 10px 30px 11px;
+
+  font: inherit;
+
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    box-shadow: 0 0 0 3px var(--accent-basic);
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--basic-green);
+  }
+
+  @media #{$tablet} {
+    padding: 10px 20px 11px;
+  }
+
+  @media #{$tablet} {
+    padding: 10px 26px 11px;
+  }
+}

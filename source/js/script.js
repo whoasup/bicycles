@@ -1,15 +1,35 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+"use strict";
 
-pageHeader.classList.remove('page-header--nojs');
+(() => {
+  const menu = document.querySelector(".menu");
+  const burger = document.querySelector(".burger");
+  const menuItems = menu.querySelectorAll(".menu__link");
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+  const changeBurger = () => {
+    let expanded = burger.getAttribute("aria-expanded") === "true";
+    burger.setAttribute("aria-expanded", !expanded);
+  };
+
+  const toggleMenu = () => {
+    changeBurger();
+    burger.classList.toggle("burger--open");
+    menu.classList.toggle("menu--close");
+  };
+
+  const onMenuItemClick = () => {
+    if (!menu.classList.contains("menu--close")) {
+      toggleMenu();
+    }
+  };
+
+  menu.classList.remove("menu--no-js");
+  menu.classList.toggle("menu--close");
+
+  burger.addEventListener("click", () => {
+    toggleMenu();
+  });
+
+  for (const menuItem of menuItems) {
+    menuItem.addEventListener("click", onMenuItemClick);
   }
-});
+})();

@@ -10,7 +10,7 @@
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="">
 
     <!-- Pixel Glass -->
-    <!-- <style>
+    <style>
       html {
         background-repeat: no-repeat;
         background-position: 50% 0;
@@ -32,11 +32,89 @@
         }
       }
     </style>
-    <link href="pixel-glass/styles.css" rel="stylesheet" />
-    <script src="pixel-glass/script.js"></script> -->
+    <link href="pixel-glass/styles.css" rel="stylesheet">
+    <script src="pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
   </head>
   <body class="page__body">
-    <h1>Добро пожаловать в Лигу А.</h1>
+    <header class="header">
+      <div class="header__container">
+        <section class="header__wrapper">
+          <a class="header__logo">
+            <img src="img/logo.svg" alt="Магазин Moon" width="67" height="20">
+          </a>
+          <h1>Мы продаем велосипеды</h1>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </section>
+
+        <!-- menu -->
+        <nav class="header__menu menu menu--no-js">
+          <ul class="menu__list" id="menu__list">
+            <li class="menu__item">
+              <a href="#about" class="menu__link">
+                <span>О нас</span>
+                <svg width="25" height="25">
+                  <use href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#categories" class="menu__link">
+                <span>Виды велосипедов</span>
+                <svg width="25" height="25">
+                  <use href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#video" class="menu__link">
+                <span>Видео про велосипеды</span>
+                <svg width="25" height="25">
+                  <use href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="menu__link">
+                <span>Контакты</span>
+                <svg width="25" height="25">
+                  <use href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- burger -->
+        <button class="menu__burger burger" type="button" aria-expanded="false" aria-controls="menu__list" aria-label="Меню">
+          <svg class="burger__icon" width="30" height="30">
+            <use class="burger__open" href="img/sprite_auto.svg#icon-burger"></use>
+          </svg>
+          <svg class="burger__icon" width="24" height="25">
+            <use class="burger__close" href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <form class="header__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">
+              Заполните поля ниже и мы подберем велосипед Вашей мечты
+            </legend>
+            <label for="name" class="form__field field">
+              <input class="field__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
+              <span class="visually-hidden">Введите Ваше Имя</span>
+            </label>
+            <label for="phone" class="form__field field">
+              <input class="field__input" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" minlength="11" maxlength="11" required="">
+              <span class="visually-hidden">Введите Ваш номер телефона</span>
+            </label>
+            <button class="form__button" type="submit">
+              <span>Подобрать велосипед мечты</span>
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </header>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
