@@ -95,18 +95,22 @@
         </button>
 
         <form class="header__form form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">
+          <fieldset>
+            <legend>
               Заполните поля ниже и мы подберем велосипед Вашей мечты
             </legend>
-            <label for="name" class="form__field field">
-              <input class="field__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
-              <span class="visually-hidden">Введите Ваше Имя</span>
-            </label>
-            <label for="phone" class="form__field field">
-              <input class="field__input" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" minlength="11" maxlength="11" required="">
-              <span class="visually-hidden">Введите Ваш номер телефона</span>
-            </label>
+            <div class="form__field field">
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
+              <label class="visually-hidden" for="name">
+                Введите Ваше Имя
+              </label>
+            </div>
+            <div class="form__field field">
+              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" minlength="11" maxlength="11" required="">
+              <label class="visually-hidden" for="phone">
+                Введите Ваш номер телефона
+              </label>
+            </div>
             <button class="form__button" type="submit">
               <span>Подобрать велосипед мечты</span>
             </button>
