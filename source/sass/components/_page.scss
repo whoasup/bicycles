@@ -1,0 +1,11 @@
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: var(--special-grey);
+  color: var(--basic-dark);
+  font-style: normal;
+}
+
+.page__body {
+  min-width: $small;
+  position: relative;
+}

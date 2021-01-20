@@ -1,0 +1,24 @@
+:root {
+  // colors
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-green: #0ad9c6;
+  --special-black: #1c1c1c;
+  --background-black: #131314;
+  --special-dark-grey: #f6f7f9;
+  --special-semi-grey: #f6f6f6;
+  --special-grey: #e5e5e5;
+}
+
+// screen width
+
+$small: 320px;
+$medium: 767px;
+$large: 1023px;
+
+$max-desktop: 1210px;
+
+// media
+
+$tablet: "only screen and (max-width: #{$large})";
+$mobile: "only screen and (max-width: #{$medium})";
