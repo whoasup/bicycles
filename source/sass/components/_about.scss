@@ -51,18 +51,24 @@
   gap: 10px;
 
   @media #{$tablet} {
+    column-gap: 30px;
+
     row-gap: 41px;
   }
 }
 
 .about__list li {
-  width: 263px;
+  width: 22.5%;
 
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
   text-align: center;
   letter-spacing: -0.5px;
+
+  @media #{$tablet} {
+    width: 47.1%;
+  }
 
   @media #{$mobile} {
     width: 100%;

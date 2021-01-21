@@ -129,9 +129,62 @@
           <li>Профессиональные консультации!</li>
         </ol>
       </section>
+
+      <section class="categories" id="categories">
+        <h2>Виды велосипедов</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <picture>
+              <!-- webp -->
+              <!-- <source type="image/webp" srcset="img/road-desktop.webp 1x, img/road-desktop@2x.webp 2x"> -->
+              <!-- 1x: 342px ; 2x: 684px -->
+              <source media="(min-width: 1024px)" srcset="/img/road-desktop.jpg 1x, /img/road-desktop@2x.jpg 2x">
+              <!-- 1x: 270px ; 2x: 540px -->
+              <img src="img/road-tablet.jpg" srcset="/img/road-tablet@2x.jpg 2x" alt="Дорожный велосипед" width="270" height="300">
+            </picture>
+            <p>Дорожный велосипед</p>
+          </li>
+          <li class="categories__item">
+            <picture>
+              <!-- webp -->
+              <!-- <source type="image/webp" srcset="img/mountain-desktop.webp 1x, img/mountain-desktop@2x.webp 2x"> -->
+              <!-- 1x: 342px ; 2x: 684px -->
+              <source media="(min-width: 1024px)" srcset="
+                  /img/mountain-desktop.jpg    1x,
+                  /img/mountain-desktop@2x.jpg 2x
+                ">
+              <!-- 1x: 270px ; 2x: 540px -->
+              <img src="img/mountain-tablet.jpg" srcset="/img/mountain-tablet@2x.jpg 2x" alt="Горный велосипед" width="270" height="300">
+            </picture>
+            <p>Горный велосипед</p>
+          </li>
+          <li class="categories__item">
+            <picture>
+              <!-- webp -->
+              <!-- <source type="image/webp" srcset="img/children-desktop.webp 1x, img/children-desktop@2x.webp 2x"> -->
+              <!-- 1x: 342px ; 2x: 684px -->
+              <source media="(min-width: 1024px)" srcset="
+                  /img/children-desktop.jpg    1x,
+                  /img/children-desktop@2x.jpg 2x
+                ">
+              <!-- 1x: 270px ; 2x: 540px -->
+              <img src="img/children-tablet.jpg" srcset="/img/children-tablet@2x.jpg 2x" alt="Детский велосипед" width="270" height="300">
+            </picture>
+            <p>Детский велосипед</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video" id="video">
+        <h2>Видео про велосипеды</h2>
+        <p>
+          В этом видео мы подробно расскажем про особенности выбора велосипеда
+          для себя.
+        </p>
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="footer__container">
         <div class="footer__info">
           <h2>Как нас найти?</h2>
