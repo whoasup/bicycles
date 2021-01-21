@@ -26,6 +26,18 @@
   }
 }
 
+.form__field {
+  margin-bottom: 20px;
+
+  @media #{$tablet} {
+    margin-bottom: 22px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 21px;
+  }
+}
+
 .form legend {
   margin-bottom: 20px;
 
@@ -44,18 +56,6 @@
 
   @media #{$mobile} {
     margin-bottom: 20px;
-  }
-}
-
-.form__field {
-  margin-bottom: 20px;
-
-  @media #{$tablet} {
-    margin-bottom: 22px;
-  }
-
-  @media #{$mobile} {
-    margin-bottom: 21px;
   }
 }
 
