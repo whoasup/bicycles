@@ -251,6 +251,26 @@
           В этом видео мы подробно расскажем про особенности выбора велосипеда
           для себя.
         </p>
+        <div class="video__wrapper">
+          <picture>
+            <!-- webp -->
+            <!-- <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x"> -->
+            <!-- 1x: 930 ; 2x: 1860 -->
+            <img
+              src="img/video-desktop.png"
+              srcset="/img/video-desktop@2x.png 2x"
+              alt="Особенности выбора велосипеда"
+              width="930"
+              height="552"
+            />
+            <a class="video__button" href="#">
+              <svg class="production__play" width="14" height="19">
+                <use href="img/sprite_auto.svg#icon-play"></use>
+              </svg>
+              <span class="visually-hidden">Смотреть видео про велосипеды</span>
+            </a>
+          </picture>
+        </div>
       </section>
     </main>
 
