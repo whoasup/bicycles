@@ -69,10 +69,10 @@
   margin-bottom: -98px;
 
   @media #{$tablet} {
-    margin-bottom: -85px;
+    margin-bottom: -90px;
   }
 
-  @media #{$tablet} {
+  @media #{$mobile} {
     margin-bottom: -48px;
   }
 }
