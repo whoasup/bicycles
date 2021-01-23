@@ -13,7 +13,7 @@
   }
 
   @media #{$mobile} {
-    padding: 0 15px 70px;
+    padding: 0 15px 82px;
   }
 }
 
@@ -55,6 +55,10 @@
 
     row-gap: 41px;
   }
+
+  @media #{$mobile} {
+    row-gap: 35px;
+  }
 }
 
 .about__list li {
@@ -90,4 +94,10 @@
   letter-spacing: -1.27273px;
 
   counter-increment: about;
+}
+
+.about__list li:nth-child(4n + 1)::before {
+  @media #{$mobile} {
+    margin-bottom: 20px;
+  }
 }

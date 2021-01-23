@@ -1,18 +1,18 @@
 :root {
   // colors
   --accent-basic: #fe7865;
-  --basic-white: #ffffff;
+  --background-black: #131314;
+  --background-grey: #1d1d1d;
   --basic-black: #000000;
   --basic-green: #0ad9c6;
+  --basic-white: #ffffff;
   --heading-black: #1f1f1f;
-  --special-black: #1c1c1c;
-  --background-grey: #1d1d1d;
-  --background-black: #131314;
-  --menu-black: #48494d;
-  --special-dark-grey: #f6f7f9;
-  --special-semi-grey: #f6f6f6;
-  --special-grey: #e5e5e5;
   --input-border: #c9ccd4;
+  --menu-black: #48494d;
+  --special-black: #1c1c1c;
+  --special-dark-grey: #f6f7f9;
+  --special-grey: #e5e5e5;
+  --special-semi-grey: #f6f6f6;
 }
 
 // screen width
@@ -20,8 +20,6 @@
 $small: 320px;
 $medium: 767px;
 $large: 1023px;
-
-$max-desktop: 1210px;
 
 // media
 

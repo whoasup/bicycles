@@ -8,33 +8,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="">
-
-    <!-- Pixel Glass -->
-    <style>
-      html {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* Mobile layout by default */
-        background-image: url("img/mobile.jpg");
-      }
-      /* Tablet */
-      @media (min-width: 768px) {
-        html {
-          /* Tablet layout */
-          background-image: url("img/tablet.jpg");
-        }
-      }
-      /* Desktop */
-      @media (min-width: 1024px) {
-        html {
-          /* Desktop layout */
-          background-image: url("img/desktop.jpg");
-        }
-      }
-    </style>
-    <link href="pixel-glass/styles.css" rel="stylesheet">
-    <script src="pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
   </head>
   <body class="page__body">
     <header class="header">
@@ -53,33 +26,21 @@
             <li class="menu__item">
               <a href="#about" class="menu__link">
                 <span>О нас</span>
-                <svg width="25" height="25">
-                  <use href="img/sprite_auto.svg#icon-arrow"></use>
-                </svg>
               </a>
             </li>
             <li class="menu__item">
               <a href="#categories" class="menu__link">
                 <span>Виды велосипедов</span>
-                <svg width="25" height="25">
-                  <use href="img/sprite_auto.svg#icon-arrow"></use>
-                </svg>
               </a>
             </li>
             <li class="menu__item">
               <a href="#video" class="menu__link">
                 <span>Видео про велосипеды</span>
-                <svg width="25" height="25">
-                  <use href="img/sprite_auto.svg#icon-arrow"></use>
-                </svg>
               </a>
             </li>
             <li class="menu__item">
               <a href="#contacts" class="menu__link">
                 <span>Контакты</span>
-                <svg width="25" height="25">
-                  <use href="img/sprite_auto.svg#icon-arrow"></use>
-                </svg>
               </a>
             </li>
           </ul>
@@ -187,13 +148,13 @@
             <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
             <!-- 1x: 930 ; 2x: 1860 -->
             <img src="img/video-desktop.png" srcset="/img/video-desktop@2x.png 2x" alt="Особенности выбора велосипеда" width="930" height="552">
-            <a class="video__button" href="#">
-              <svg class="production__play" width="14" height="19">
-                <use href="img/sprite_auto.svg#icon-play"></use>
-              </svg>
-              <span class="visually-hidden">Смотреть видео про велосипеды</span>
-            </a>
           </picture>
+          <button class="video__button" type="button">
+            <svg class="production__play" width="14" height="19">
+              <use href="img/sprite_auto.svg#icon-play"></use>
+            </svg>
+            <span class="visually-hidden">Смотреть видео про велосипеды</span>
+          </button>
         </div>
       </section>
     </main>

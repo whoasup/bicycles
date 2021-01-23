@@ -77,8 +77,16 @@
   }
 }
 
-.menu__link svg {
+.menu__link::after {
+  content: "";
+
   display: none;
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 
   @media #{$tablet} {
     display: block;

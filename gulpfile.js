@@ -101,20 +101,9 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("copypixel", function () {
-  return gulp
-    .src(["node_modules/pixel-glass/**"], {
-      base: "node_modules",
-    })
-    .pipe(gulp.dest("build"));
-});
-
 gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task(
-  "build",
-  gulp.series("clean", "copy", "copypixel", "css", "sprite", "html")
-);
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));

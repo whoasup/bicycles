@@ -1,35 +1,35 @@
-"use strict";
+'use strict';
 
-(() => {
-  const menu = document.querySelector(".menu");
-  const burger = document.querySelector(".burger");
-  const menuItems = menu.querySelectorAll(".menu__link");
+(function () {
+  var menu = document.querySelector('.menu');
+  var burger = document.querySelector('.burger');
+  var menuItems = menu.querySelectorAll('.menu__link');
 
-  const changeBurger = () => {
-    let expanded = burger.getAttribute("aria-expanded") === "true";
-    burger.setAttribute("aria-expanded", !expanded);
+  var changeBurger = function () {
+    var expanded = burger.getAttribute('aria-expanded') === 'true';
+    burger.setAttribute('aria-expanded', !expanded);
   };
 
-  const toggleMenu = () => {
+  var toggleMenu = function () {
     changeBurger();
-    burger.classList.toggle("burger--open");
-    menu.classList.toggle("menu--close");
+    burger.classList.toggle('burger--open');
+    menu.classList.toggle('menu--close');
   };
 
-  const onMenuItemClick = () => {
-    if (!menu.classList.contains("menu--close")) {
+  var onMenuItemClick = function () {
+    if (!menu.classList.contains('menu--close')) {
       toggleMenu();
     }
   };
 
-  menu.classList.remove("menu--no-js");
-  menu.classList.toggle("menu--close");
+  menu.classList.remove('menu--no-js');
+  menu.classList.toggle('menu--close');
 
-  burger.addEventListener("click", () => {
+  burger.addEventListener('click', function () {
     toggleMenu();
   });
 
-  for (const menuItem of menuItems) {
-    menuItem.addEventListener("click", onMenuItemClick);
+  for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', onMenuItemClick);
   }
 })();
