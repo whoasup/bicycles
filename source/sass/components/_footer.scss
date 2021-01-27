@@ -1,7 +1,7 @@
 // footer
 
 .footer__container {
-  padding: 70px 16.7% 90px;
+  padding: 70px 16.7% 70px;
 
   text-align: center;
   color: var(--basic-black);
@@ -9,11 +9,11 @@
   background-color: var(--basic-white);
 
   @media #{$tablet} {
-    padding: 35px 35px 50px;
+    padding: 35px 35px 30px;
   }
 
   @media #{$mobile} {
-    padding: 35px 0 50px;
+    padding: 35px 0 30px;
   }
 }
 
@@ -86,29 +86,38 @@
   justify-content: center;
   padding-right: 15px;
 
-  gap: 90px;
+  // column-gap: 90px;
+
+  // row-gap: 20px;
 
   @media #{$mobile} {
     flex-direction: column;
     align-items: center;
     padding: 0 15px;
 
-    gap: 23px;
+    // gap: 23px;
   }
 }
 
 .footer__contact {
   display: flex;
+  margin-bottom: 20px;
+  padding: 0 45px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 
-  gap: 15px;
   place-items: center;
+
+  @media #{$mobile} {
+    padding: 0;
+  }
 }
 
 .footer__contact svg {
+  margin-right: 15px;
+
   fill: transparent;
 }
 

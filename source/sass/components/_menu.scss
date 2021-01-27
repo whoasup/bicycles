@@ -2,18 +2,26 @@
 
 .menu {
   @media #{$tablet} {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 9998;
 
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 100px;
+    overflow-y: scroll;
 
     color: var(--menu-black);
 
     background-color: var(--basic-white);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     &--no-js {
       position: unset;
@@ -50,8 +58,12 @@
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
+  row-gap: 15px;
+
   @media #{$tablet} {
-    flex-direction: column;
+    display: grid;
+    justify-content: unset;
+    width: 100%;
     padding-bottom: 0;
 
     font-weight: 400;
@@ -59,7 +71,7 @@
     line-height: 28px;
     letter-spacing: normal;
 
-    gap: 30px;
+    grid-gap: 30px;
   }
 }
 

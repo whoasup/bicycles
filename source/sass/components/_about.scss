@@ -9,11 +9,11 @@
   background-color: var(--basic-white);
 
   @media #{$tablet} {
-    padding: 0 106px 70px;
+    padding: 0 106px 35px;
   }
 
   @media #{$mobile} {
-    padding: 0 15px 82px;
+    padding: 0 15px 50px;
   }
 }
 
@@ -47,18 +47,6 @@
   list-style: none;
 
   counter-reset: about;
-
-  gap: 10px;
-
-  @media #{$tablet} {
-    column-gap: 30px;
-
-    row-gap: 41px;
-  }
-
-  @media #{$mobile} {
-    row-gap: 35px;
-  }
 }
 
 .about__list li {
@@ -72,10 +60,12 @@
 
   @media #{$tablet} {
     width: 47.1%;
+    margin-bottom: 40px;
   }
 
   @media #{$mobile} {
     width: 100%;
+    margin-bottom: 35px;
 
     font-size: 18px;
   }

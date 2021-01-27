@@ -4,6 +4,7 @@
   var menu = document.querySelector('.menu');
   var burger = document.querySelector('.burger');
   var menuItems = menu.querySelectorAll('.menu__link');
+  var pageBody = document.querySelector('body');
 
   var changeBurger = function () {
     var expanded = burger.getAttribute('aria-expanded') === 'true';
@@ -14,6 +15,7 @@
     changeBurger();
     burger.classList.toggle('burger--open');
     menu.classList.toggle('menu--close');
+    pageBody.classList.toggle('no-scroll');
   };
 
   var onMenuItemClick = function () {

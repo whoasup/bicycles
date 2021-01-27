@@ -1,11 +1,13 @@
 .page {
-  font-family: "Open Sans", "Arial", sans-serif;
-  background-color: var(--basic-white);
-  color: var(--basic-dark);
   font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: var(--basic-dark);
+
+  background-color: var(--basic-white);
 }
 
-.page__body {
-  min-width: $small;
+.page body {
   position: relative;
+
+  min-width: $small;
 }

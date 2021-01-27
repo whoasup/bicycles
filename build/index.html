@@ -10,7 +10,7 @@
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="">
   </head>
-  <body class="page__body">
+  <body>
     <header class="header">
       <div class="header__container">
         <section class="header__wrapper">
@@ -48,11 +48,11 @@
         </nav>
         <!-- burger -->
         <button class="burger" type="button" aria-expanded="false" aria-controls="menu__list" aria-label="Меню">
-          <svg class="burger__icon" width="30" height="30">
-            <use class="burger__open" href="img/sprite_auto.svg#icon-burger"></use>
+          <svg class="burger__open" width="30" height="30">
+            <use href="img/sprite_auto.svg#icon-burger"></use>
           </svg>
-          <svg class="burger__icon" width="24" height="25">
-            <use class="burger__close" href="img/sprite_auto.svg#icon-cross"></use>
+          <svg class="burger__close" width="24" height="25">
+            <use href="img/sprite_auto.svg#icon-cross"></use>
           </svg>
         </button>
 
@@ -68,7 +68,7 @@
               </label>
             </div>
             <div class="form__field field">
-              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{11}" minlength="11" maxlength="11" required="">
+              <input type="tel" name="phone" id="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Введите Ваш номер телефона" required="">
               <label class="visually-hidden" for="phone">
                 Введите Ваш номер телефона
               </label>
@@ -125,11 +125,11 @@
               <picture>
                 <!-- webp -->
                 <source type="image/webp" srcset="
-                    img/children-tablet.webp    1x,
-                    img/children-tablet@2x.webp 2x
+                    img/children-desktop.webp    1x,
+                    img/children-desktop@2x.webp 2x
                   ">
-                <!-- 1x: 270px ; 2x: 540px -->
-                <img src="img/children-tablet.jpg" srcset="/img/children-tablet@2x.jpg 2x" alt="Детский велосипед" width="270" height="300">
+                <!-- 1x: 342px ; 2x: 684px -->
+                <img src="img/children-desktop.jpg" srcset="/img/children-desktop@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
               </picture>
             </div>
             <p>Детский велосипед</p>
@@ -150,12 +150,12 @@
             <!-- 1x: 930 ; 2x: 1860 -->
             <img src="img/video-desktop.png" srcset="/img/video-desktop@2x.png 2x" alt="Особенности выбора велосипеда" width="930" height="552">
           </picture>
-          <button class="video__button" type="button">
-            <svg class="production__play" width="14" height="19">
+          <a class="video__button" href="#">
+            <svg width="14" height="19">
               <use href="img/sprite_auto.svg#icon-play"></use>
             </svg>
             <span class="visually-hidden">Смотреть видео про велосипеды</span>
-          </button>
+          </a>
         </div>
       </section>
     </main>
